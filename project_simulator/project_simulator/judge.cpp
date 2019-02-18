@@ -9,7 +9,7 @@ Judge::Judge() { }
 
 Judge::~Judge() { }
 
-bool Judge::isInTarget(char *target_deck, int target_deck_len, char card_draw) {
+bool Judge::isInTarget(char target_deck[], int target_deck_len, char card_draw) {
 	/*
 	 *	@ brief: 判断一次抽卡的结果是否在目标卡组中
 	 *	@ input: 目标卡组数组， 目标卡组的卡牌数， 一次抽卡的卡牌

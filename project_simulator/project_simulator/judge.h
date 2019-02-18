@@ -9,7 +9,7 @@
 
 class Judge {
 private:
-	bool isInTarget(char *, int, char);
+	bool isInTarget(char [], int, char);
 public:
 	Judge();
 	~Judge();
