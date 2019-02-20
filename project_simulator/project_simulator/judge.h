@@ -13,8 +13,8 @@ private:
 public:
 	Judge();
 	~Judge();
-	bool isDrawMeetGT();
-	bool isDrawMeetEQ();	
+	static bool isDrawMeetGT(char [], char *);
+	static bool isDrawMeetEQ(char [], char *);	
 };
 
 #endif // !JUDGE_H_
