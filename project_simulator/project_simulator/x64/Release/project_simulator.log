@@ -1,7 +1,8 @@
-﻿  judge.cpp
-  main.cpp
+﻿  main.cpp
   正在生成代码
-  All 223 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  0 of 223 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    34 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   project_simulator.vcxproj -> E:\GitHub\ShadowVerse_simulator\project_simulator\x64\Release\project_simulator.exe
   project_simulator.vcxproj -> E:\GitHub\ShadowVerse_simulator\project_simulator\x64\Release\project_simulator.pdb (Full PDB)
