@@ -24,23 +24,21 @@ bool Judge::isInTarget(char target_deck[], int target_deck_len, char card_draw) 
 	return false;
 }
 
-bool Judge::isDrawMeetGT(char target_deck[], char *draw_deck) {
+bool Judge::isDrawMeetGT(string target_deck, string draw_deck) {
 	/*
 	 *	@ brief: 判断抽牌卡组是否至少包含目标卡组
 	 *	@ input: 抽牌卡组数组，目标卡组数组
 	 */
-	string target_s, draw_s;
 	int flag = 0;
-	target_s = string(target_deck);
-	draw_s = draw_deck;
-	draw_s.erase(remove(draw_s.begin(), draw_s.end(), '0'), draw_s.end());
-	sort(target_s.begin(), target_s.end());
-	sort(draw_s.begin(), draw_s.end());
-	for (int i = 0; i < draw_s.length(); ++i) {
+	draw_deck.erase(remove(draw_deck.begin(), draw_deck.end(), '0'), draw_deck.end());
+	sort(target_deck.begin(), target_deck.end());
+	sort(draw_deck.begin(), draw_deck.end());
+	for (size_t i = 0; i < target_deck.length(); ++i) {
 		flag = 0;
-		for (int j = 0; j < target_s.length(); ++j) {
-			if (draw_s[i] == target_s[j]) {
+		for (size_t j = 0; j < draw_deck.length(); ++j) {
+			if (target_deck[i] == draw_deck[j]) {
 				flag = 1;
+				draw_deck[j] = '0';
 				break;
 			}
 		}
@@ -49,16 +47,13 @@ bool Judge::isDrawMeetGT(char target_deck[], char *draw_deck) {
 	return true;
 }
 
-bool Judge::isDrawMeetEQ(char target_deck[], char *draw_deck) {
+bool Judge::isDrawMeetEQ(string target_deck, string draw_deck) {
 	/*
 	 *	@ brief: 判断抽牌卡组是否正好满足指定目标卡组
 	 *	@ input: 抽牌卡组数组，目标卡组数组
 	 */
-	string target_s, draw_s;
-	target_s = string(target_deck);
-	draw_s = draw_deck;
-	draw_s.erase(remove(draw_s.begin(), draw_s.end(), '0'), draw_s.end());
-	sort(target_s.begin(), target_s.end());
-	sort(draw_s.begin(), draw_s.end());
-	return (0 == draw_s.compare(target_s));
+	draw_deck.erase(remove(draw_deck.begin(), draw_deck.end(), '0'), draw_deck.end());
+	sort(target_deck.begin(), target_deck.end());
+	sort(draw_deck.begin(), draw_deck.end());
+	return (0 == draw_deck.compare(target_deck));
 }

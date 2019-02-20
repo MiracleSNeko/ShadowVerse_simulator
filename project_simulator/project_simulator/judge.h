@@ -13,8 +13,8 @@ private:
 public:
 	Judge();
 	~Judge();
-	static bool isDrawMeetGT(char [], char *);
-	static bool isDrawMeetEQ(char [], char *);	
+	static bool isDrawMeetGT(std::string, std::string);
+	static bool isDrawMeetEQ(std::string, std::string);	
 };
 
 #endif // !JUDGE_H_
