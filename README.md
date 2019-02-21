@@ -1,5 +1,5 @@
 # ShadowVerse_simulator
-README.md
+
 ===========================
 
 某ShadowVerse~~沙雕之诗~~的抽卡模拟程序  
