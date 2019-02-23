@@ -14,7 +14,7 @@
 |version|1.0.0|
 
 ****
-`Copyrigh (C)， 2019， QQ group ★爱上kotomi★ (213794567), All rights reserved. (xD)`
+`Copyright (C)， 2019， QQ group ★爱上kotomi★ (213794567), All rights reserved. (xD)`
 
 ****
 ## 食用简易指南

@@ -1,5 +1,5 @@
 /*
- *	Copyrigh (C)£¨ 2019£¨ QQ group °Ô∞Æ…œkotomi°Ô (213794567), All rights reserved. (xD)
+ *	Copyright (C)£¨ 2019£¨ QQ group °Ô∞Æ…œkotomi°Ô (213794567), All rights reserved. (xD)
  *	
  *	a simulator of ShadowVerse draw card.
  *	why not use Monte Carlo instead of calculations? (xD)
